@@ -1,0 +1,78 @@
+/* Styles for the main content */
+.main-content {
+  /* Sets the background image for the main content */
+  /* Image by Денис Марчук from Pixabay */
+  background-image: url("../images/webskillsbg.jpg");
+  background-size: cover;
+  height: 100%;
+  /* Sets the background color with opacity */
+  background-color: rgba(163, 167, 172, 0.5);
+  background-blend-mode: overlay;
+}
+
+/* Styles for the skills title */
+.skills-title {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 40px;
+  font-size: x-large;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the skills container */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Styles for the skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+/* Styles applied when hovering over a skill box */
+.skill-box:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for the skill box */
+.skill-box {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 10px;
+  /* Adds a box shadow to the skill box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sets the transition effect for smooth changes */
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+/* Styles for the heading within the skill box */
+.main-content h3 {
+  font-weight: 800;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+/* Styles for the skills logo */
+.skills-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding-right: 2px;
+}
+
+.main-content .main-content li {
+  line-height: 1.5;
+}

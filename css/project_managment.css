@@ -1,0 +1,84 @@
+/* Styling for the main content area */
+.main-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Background overlay for the main content area */
+.main-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/projectManagementBg.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Styling for the project containers */
+.project-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* Styling for the sticky notes */
+.project-management-skills,
+.achievements,
+.notable-projects {
+  background-color: #c3e2ff;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  height: 50%;
+  width: 800px;
+  margin: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* Pseudo-elements for the sticky notes */
+.project-management-skills::before,
+.achievements::before,
+.notable-projects::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 80px;
+  height: 20px;
+  border: 1px solid #33333344;
+  background-color: #fff;
+  transform: skew(-20deg);
+}
+
+/* Additional styles for the text within the sticky notes */
+.project-management-skills p,
+.achievements ul,
+.notable-projects ul {
+  font-size: 1.2rem;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+/* Styling for list items within the main content area */
+.main-content li {
+  list-style-type: disc;
+  margin-left: 10px;
+  padding: 10px;
+}

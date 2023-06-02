@@ -1,0 +1,135 @@
+/* Main content */
+.main-content {
+  background-color: #f2f2f2;
+  /* Image src: Photo by Oleksandr Pidvalnyi: https://www.pexels.com/photo/white-and-blue-passenger-airplane-aerial-photography-1004584/ */
+  background-image: url("../images/tourismPageBackground.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container */
+.form-container {
+  width: 80%;
+  /* height: 70%; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+}
+
+/* Heading styles */
+h1,
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #4191ac;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+.title-sub-text {
+  text-align: center;
+  color: #4191ac;
+  font-size: 1.6em;
+  padding-bottom: 10px;
+}
+
+/* Fieldset styles */
+fieldset {
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 3px;
+  padding-bottom: 5px;
+}
+
+/* About you section */
+.about-you {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+/* Individual sections within the About you section */
+.age,
+.locations,
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+}
+
+/* Label styles */
+label {
+  font-size: 1.1em;
+  color: #4191ac;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+/* Special label for the About you section */
+.about-you h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Radio button styles */
+input[type="radio"] {
+  margin: 0 10px 0 0;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Button styles */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #46ac41;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+/* Individual pairs within the form */
+.input-age-pair,
+.input-location-pair,
+.input-comment-pair {
+  padding: 10px;
+}
+
+/* Form buttons */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

@@ -1,0 +1,90 @@
+/* bouncing ball element */
+#ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  left: 300px;
+  top: 0px;
+  /* Image by OpenClipart-Vectors from Pixabay */
+  background-image: url("../images/beachball.png");
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+  animation: spin 10s linear infinite;
+}
+/* animation for the ball just goes from 0-180
+ */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* main area */
+.main-content {
+  position: relative;
+  background-image: url("../images/beach.jpg");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+
+/* the actual body content */
+.real-main-content {
+  top: 30%;
+  width: 40vw;
+  /* height: 50vh; */
+  border-radius: 20px;
+  /* drop shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* position on top of the bounce area with a higher z */
+  /* white */
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  overflow-y: auto;
+  left: 25%;
+  /* semi transparent blur */
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+/* main content header */
+.main-content h1 {
+  font-size: 1.9rem;
+  text-align: center;
+  padding: 20px;
+}
+
+/* reset link style to be readable */
+.main-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+/* the text box */
+.js-spiel {
+  margin: 70px;
+  font-size: 1.4rem;
+  /* more line spacing for easier reading */
+  line-height: 2;
+}
+
+/* the sub heading */
+.main-content h2 {
+  font-size: 1.9rem;
+  text-align: center;
+  padding: 100px;
+}

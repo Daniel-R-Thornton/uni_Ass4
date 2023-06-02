@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/tourism.css">
+    <!-- Import the JavaScript -->
+    <script src="js/tourismExample.js"></script>
+
+    <title>Tourism Sign up Form Example</title>
+</head>
+
+<body onload="welcomeUser()">
+
+    <!-- Nav bar -->
+    <div class="side-nav">
+        <!-- Image src: Photo by Erik Mclean: https://www.pexels.com/photo/ships-moored-in-port-of-modern-city-at-night-4593507/ -->
+        <div class="profile-block">
+            <img src="./images/placeholderdaniel.jpg" class="profile-image" alt="Daniel Thornton" />
+
+            <div>Daniel Thornton</div>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-button">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-button"><a href="resume.html">Resume</a></li>
+                <li class="nav-button">
+                    <a href="web_design.html">Web Design</a>
+                </li>
+                <li class="nav-button"><a href="project_management.html">Project Management</a></li>
+                <li class="nav-button"><a href="javascript.html">JavaScript</a></li>
+                <li class="nav-button current"><a href="tourism.html">Tourism</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main body content -->
+    <div class="main-content">
+        <div class="form-container">
+            <!-- Form for signing up -->
+            <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="POST" name="formBody"
+                onsubmit="return validateForm()">
+                <h1>Lets Fly Away!</h1>
+                <p class="title-sub-text">Sign up for our newsletter to receive the latest deals and offers!</p>
+                <fieldset class="about-you">
+                    <h2>Tell Us About You</h2>
+                    <!-- First Name input -->
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" maxlength="60">
+
+                    <!-- Last Name input -->
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" maxlength="60">
+
+                    <!-- Email Address input -->
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" maxlength="60">
+                </fieldset>
+                <fieldset class="age">
+                    <h2>How old are you?</h2>
+                    <!-- Age Range selection -->
+                    <label for="age-range">Age Range:</label>
+                    <div class="input-age-pair">
+                        <input type="radio" id="age-range-1" name="age-range" value="15-25">
+                        <label for="age-range-1">15-25</label><br>
+                    </div>
+                    <div class="input-age-pair">
+                        <input type="radio" id="age-range-2" name="age-range" value="26-35">
+                        <label for="age-range-2">26-35</label><br>
+                    </div>
+                    <div class="input-age-pair">
+                        <input type="radio" id="age-range-3" name="age-range" value="36-45">
+                        <label for="age-range-3">36-45</label><br>
+                    </div>
+                    <div class="input-age-pair">
+                        <input type="radio" id="age-range-4" name="age-range" value="46-55">
+                        <label for="age-range-4">46-55</label><br>
+                    </div>
+                    <div class="input-age-pair">
+                        <input type="radio" id="age-range-5" name="age-range" value="55+">
+                        <label for="age-range-5">55+</label>
+                    </div>
+                </fieldset>
+                <fieldset class="locations">
+                    <h2>Where do you want to travel?</h2>
+                    <!-- Preferred Tour Packages selection -->
+                    <label for="services">Preferred Tour Locations</label><br>
+                    <div class="input-location-pair">
+                        <input type="checkbox" id="package1" name="packages[]" value="Package 1">
+                        <label for="package1">Asia</label><br>
+                    </div>
+                    <div class="input-location-pair">
+                        <input type="checkbox" id="package2" name="packages[]" value="Package 2">
+                        <label for="package2">North America</label><br>
+                    </div>
+                    <div class="input-location-pair">
+                        <input type="checkbox" id="package3" name="packages[]" value="Package 3">
+                        <label for="package3">South America</label><br>
+                    </div>
+                    <div class="input-location-pair">
+                        <input type="checkbox" id="package4" name="packages[]" value="Package 4">
+                        <label for="package4">Australia</label><br>
+                    </div>
+                    <div class="input-location-pair">
+                        <input type="checkbox" id="package5" name="packages[]" value="Package 5">
+                        <label for="package5">Europe</label>
+                    </div>
+
+                    <div class="input-comment-pair">
+                        <!-- Additional Comments -->
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="3" cols="60"></textarea>
+                    </div>
+                </fieldset>
+                <!-- Submit and Reset buttons -->
+                <div class="form-buttons">
+                    <input type="submit" value="Submit" name="submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/* Styling for the header */
+.header {
+  color: red;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Styling for language-related elements */
+.my-language,
+.effective-communication {
+  position: relative;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-left: 4px solid #e91e63;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 80px;
+}
+
+/* Pseudo-elements for effective-communication and my-language */
+.effective-communication:before,
+.effective-communication:after {
+  content: "🗣️"; /* Talking emoji */
+  position: absolute;
+  font-size: 36px;
+  color: #e91e63;
+}
+
+.my-language:before,
+.my-language:after {
+  content: "📢"; /* Megaphone emoji */
+  position: absolute;
+  font-size: 36px;
+  color: #e91e63;
+}
+
+/* Positioning of pseudo-elements */
+.effective-communication::before,
+.my-language:before {
+  top: -10px;
+  left: -30px;
+}
+
+.effective-communication:after,
+.my-language:after {
+  bottom: -10px;
+  right: -30px;
+  transform: scaleX(-1);
+}
+
+/* Styling for the main content area */
+.main-content {
+  background-image: url(../images/comms.jpg); /* Background image URL */
+  background-size: cover;
+  background-position: center;
+}

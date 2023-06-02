@@ -1,0 +1,45 @@
+/* Styles for the main content section */
+.main-content {
+  /* Photo by cottonbro studio: https://www.pexels.com/photo/man-reclining-and-looking-at-his-laptop-5483064/; */
+  background-image: url("../images/indexbgimage.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+/* Styles for the title block section */
+.title-block,
+.about-section {
+  background: #000000;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+/* Styles for the <h1> element within the title block */
+.title-block h1 {
+  font-size: 3rem;
+  width: max-content; /* Set the width of the <h1> element to fit its content */
+}
+
+/* Styles for the <h2> element within the title block */
+.title-block h2 {
+  margin: 20px;
+  width: max-content; /* Set the width of the <h2> element to fit its content */
+}
+
+/* Styles for the element with class "blurb" within the title block */
+.title-block .blurb {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 80%;
+  text-align: center;
+  text-shadow: 2px 2px 10px #000000; /* Add a text shadow effect */
+  margin: 0 auto;
+}

@@ -1,0 +1,106 @@
+/* Defines styles for the resume body */
+.resume-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  background-color: rgba(255, 255, 255, 0.97);
+  padding: 1rem;
+  /* Sets the background image for the resume body */
+  background-image: url("../images/resumeBGImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.resume-body a {
+  text-decoration: none;
+  color: black;
+}
+
+.resume-body a:visited {
+  color: black;
+}
+/* Styles for each individual div inside the resume body */
+.resume-body > div {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  /* Sets a glass-like background with some transparency */
+  background-color: rgba(255, 255, 255, 1);
+  font-size: larger;
+}
+
+/* Styles applied when hovering over a div */
+.resume-body > div:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the subheading in the resume body */
+.resume-body h2.title-sub {
+  margin-bottom: 1.5rem;
+}
+
+/* Styles for the paragraphs within the resume-about-block class */
+.resume-about-block p {
+  line-height: 1.5rem;
+}
+
+/* Styles for the list items within the resume-career-block class */
+.resume-career-block li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+/* Styles for the headings within the resume-career-block class */
+.resume-career-block h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Styles for the subheadings within the resume-career-block class */
+.resume-career-block h5 {
+  margin-bottom: 0.5rem;
+}
+
+/* Aligns text within the resume-skills-block class to the left */
+.resume-skills-block ul,
+.resume-skills-block p {
+  text-align: left;
+}
+
+/* Styles for the table within the resume-edu-block class */
+.resume-edu-block table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+/* Styles for the table headers and cells within the resume-edu-block class */
+.resume-edu-block th,
+.resume-edu-block td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* Styles for the resume-contact-block class */
+.resume-contact-block {
+  grid-column: 1 / 3;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* Styles for the profile block */
+.profile-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the profile image */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}

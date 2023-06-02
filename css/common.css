@@ -1,0 +1,108 @@
+/* common overrides e.g. remove styling from lists and so on                 */
+/* this ensures that the browser default styling is removed for consistency */
+/* --------------------------------------------------------------------------*/
+
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting the height of the HTML element to 100% */
+html {
+  height: 100%;
+}
+
+/* Styling for the body element */
+body {
+  background-color: rgb(4, 11, 20);
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+  height: 100vh; /* Setting the height of the body to 100% viewport height */
+}
+
+/* Removing the bullet points from list items */
+li {
+  list-style: none;
+}
+
+/* Styling for links */
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 1rem 1rem;
+}
+
+/* Styling for visited links */
+a:visited {
+  color: #f1f1f1;
+}
+
+/* Styling for the side navigation bar */
+.side-nav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(4, 11, 20);
+}
+
+/* Styling for the profile block */
+.profile-block {
+  background-color: rgb(4, 11, 20);
+  padding: 1rem 1rem;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the profile image */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto;
+  object-fit: cover;
+  border-radius: 100%;
+  background-color: rgb(163, 167, 172);
+}
+
+/* Styling for navigation buttons */
+.nav-button {
+  color: #f1f1f1;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  display: flex;
+  transition: all 0.7s ease-in-out;
+}
+
+/* Styling for the currently active navigation button */
+.nav-button.current {
+  background-color: rgb(163, 167, 172);
+  transition: all 0.5s ease-in-out;
+  color: rgb(4, 11, 20);
+}
+
+/* Hover effect for navigation buttons */
+.nav-button:hover {
+  background-color: rgb(163, 167, 172);
+  color: rgb(4, 11, 20);
+  cursor: pointer;
+}
+
+/* Styling for the main content area */
+.main-content {
+  margin-left: 300px;
+  width: calc(100% - 300px);
+  background-color: rgb(163, 167, 172);
+  height: 100%;
+  overflow: auto;
+}

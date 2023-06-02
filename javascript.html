@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/javascript.css">
+
+    <!-- JavaScript -->
+    <script src="js/javascriptPage.js"></script>
+
+    <title>Daniel Thornton's Portfolio</title>
+</head>
+
+<body onload="animateBall()">
+    <!-- Navigation -->
+    <div class="side-nav">
+        <!-- Profile block -->
+        <div class="profile-block">
+            <!-- Profile image -->
+            <img src="./images/placeholderdaniel.jpg" class="profile-image" alt="Daniel Thornton" />
+            <div>Daniel Thornton</div>
+        </div>
+        <!-- Main navigation menu -->
+        <nav>
+            <ul>
+                <li class="nav-button ">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-button"><a href="resume.html">Resume</a></li>
+                <li class="nav-button ">
+                    <a href="web_design.html">Web Design</a>
+                </li>
+                <li class="nav-button"><a href="project_management.html">Project Management</a></li>
+                <li class="nav-button current"><a href="javascript.html">JavaScript</a></li>
+                <li class="nav-button"><a href="tourism.html">Tourism Mailing List</a></li>
+                <li class="nav-button"><a href="communication.html">Communication Skills</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main body content -->
+    <div class="main-content" id="bounce-area">
+        <!-- Section: My JavaScript Abilities -->
+        <div class="real-main-content">
+            <h1>My JavaScript Abilities</h1>
+            <p class="js-spiel">
+                I have been programming in JavaScript and other languages for over 10 years and have the ability to
+                create engaging websites that draw visitors in. I've
+                integrated a number of features and functionalities that improve user interaction and make browsing
+                enjoyable using JavaScript (such as this bouncing ball. Try clicking it to make it pop!). I am excited
+                to use JavaScript to contribute value to the tourism industry. I enjoy creating engaging components that
+                improve the online visibility of tourism enterprises. I can
+                help encourage adoption by developing pleasant and user-friendly experiences.
+                If you want to see more of my work, check out my mailing list sign-up form:
+                <a href="./tourism.html" target="_blank">Sign up here!</a>
+            </p>
+        </div>
+        <!-- Comment: The following div represents the animated ball. -->
+        <div id="ball"></div>
+    </div>
+</body>
+
+</html>
