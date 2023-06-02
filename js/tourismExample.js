@@ -35,7 +35,14 @@ function validateForm() {
         formValidityString.join("\r\n                            ")
     );
   }
+
   // return false if any field is empty to prevent the form from submitting
+  // tell them the form is all ok and that they can submit the form (only if valid)
+  if (formValid) {
+    alert(
+      "Thanks for signing up " + formData.first_Name + " " + formData.last_Name
+    );
+  }
   return formValid;
 }
 
