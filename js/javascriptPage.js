@@ -4,9 +4,8 @@ function animateBall() {
   const ball = document.getElementById("ball");
   // setup media
   // Sound Effect from Pixabay
-  //disabled for github due to file type limitations
-  //const bounceSound = new Audio("/audio/bounce.mp3");
- // const popSound = new Audio("/audio/pop.mp3");
+  const bounceSound = new Audio("/audio/bounce.mp3");
+  const popSound = new Audio("/audio/pop.mp3");
 
   // get the bounce-able area element
   const bounceArea = document.getElementById("bounce-area");
@@ -54,7 +53,7 @@ function animateBall() {
     if (ballX + 120 + ballSpeedX > bounceAreaWidth || ballX + ballSpeedX < 0) {
       // if the ball is colliding with the container, reverse its direction and add some randomness to the speed
       ballSpeedX *= -1;
-   //   bounceSound.play();
+      bounceSound.play();
     }
 
     if (ballY + 120 + ballSpeedY > bounceAreaHeight || ballY + ballSpeedY < 0) {
@@ -62,7 +61,7 @@ function animateBall() {
       ballSpeedY *= -1;
       // play the bounce sound
       // bounce sound
-    //  bounceSound.play();
+      bounceSound.play();
     }
     // dispose of the bounce sound
     // calculate the new position of the ball
