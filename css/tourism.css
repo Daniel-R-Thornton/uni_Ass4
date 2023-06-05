@@ -3,6 +3,7 @@
   background-color: #f2f2f2;
   /* Image src: Photo by Oleksandr Pidvalnyi: https://www.pexels.com/photo/white-and-blue-passenger-airplane-aerial-photography-1004584/ */
   background-image: url("../images/tourismPageBackground.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,23 +12,22 @@
 
 /* Form container */
 .form-container {
-  width: 80%;
-  /* height: 70%; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   backdrop-filter: blur(5px);
-  padding: 20px;
+  margin: 20px;
 }
 
 /* Heading styles */
 h1,
 h2 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   color: #4191ac;
 }
@@ -40,7 +40,7 @@ h2 {
   text-align: center;
   color: #4191ac;
   font-size: 1.6em;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 /* Fieldset styles */
@@ -58,7 +58,6 @@ fieldset {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-  padding-bottom: 20px;
 }
 
 /* Individual sections within the About you section */

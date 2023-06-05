@@ -35,7 +35,7 @@
 
 /* the actual body content */
 .real-main-content {
-  top: 30%;
+  top: 10%;
   width: 40vw;
   /* height: 50vh; */
   border-radius: 20px;
@@ -65,13 +65,12 @@
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
-  padding: 20px;
+  padding: 10px;
   display: block;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   border: 1px solid black;
-  margin: 20px;
 }
 
 /* the text box */
